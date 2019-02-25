@@ -1,0 +1,38 @@
+--TABELAS BANCO DE DADOS DESAFIO STONE--
+--ACIONISTAS
+--EMPRESA
+--ATIVIDADE PRINCIPAL
+
+CREATE TABLE ACIONISTAS (
+                          CNPJ    INT             NOT NULL
+                          ,NOME   VARCHAR   (150) NOT NULL
+                          ,CARGO  VARCHAR   (50)  NOT NULL --QUAL
+                          ,CONSTRAINT CNPJ_PK PRIMARY KEY (CNPJ)
+                        );
+                        
+                        SELECT * FROM ACIONISTAS;
+                        
+ CREATE TABLE ATIVIDADE_PRINCIPAL (
+                          CNPJ        INT             NOT NULL
+                          ,CODIGO     VARCHAR   (30) NOT NULL
+                          ,DESCRICAO  VARCHAR   (150)  NOT NULL --TEXT
+                          ,CONSTRAINT CNPJ_AT_PRINCIPAL_PK PRIMARY KEY (CNPJ)
+                        );
+                        
+                        SELECT * FROM ATIVIDADE_PRINCIPAL;
+                        
+                        
+ CREATE TABLE EMPRESA_DESAFIO (
+                          CNPJ          INT             NOT NULL
+                          ,NOME         VARCHAR   (50)  NOT NULL
+                          ,DT_ABERTURA  DATE            NOT NULL 
+                          ,CAPITAL_SOCIAL DECIMAL (12,2)NOT NULL
+                          ,CONSTRAINT CNPJ_EMPRESA_PK PRIMARY KEY (CNPJ)
+                        );
+                        
+                        SELECT * FROM EMPRESA_DESAFIO;
+                        
+                        
+ 
+                        
+    
